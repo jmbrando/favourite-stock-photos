@@ -1,3 +1,5 @@
+/* base styles */
+
 html {
   font-size: 100%;
 }
@@ -10,31 +12,137 @@ body {
   display: none;
 }
 
+.inner-container {
+  max-width: 75rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+/* type styles */
+
 h1 {
   font-size: 2rem;     /* 32px */
   line-height: 3rem;     /* 48px */
 }
 
 h2 {
-  font-size: 6.25rem;     /* 100px */
-  line-height: 7.5rem;     /* 120px */
+  font-size: 2.25rem;     /* 36px */
+  line-height: 3rem;     /* 48px */
+  font-weight: 900;
 }
 
 h3 {
   font-size: 1.5rem;     /* 24px */
   line-height: 3rem;     /* 48px */
+  font-weight: 600;
 }
 
 h4 {
   font-size: 2.25rem;     /* 36px */
   line-height: 3rem;     /* 48px */
+  font-weight: 600;
+}
+
+h1, h2, h3, h4 {
+  text-transform: uppercase;
+}
+
+/* header styles */
+
+header {
+  background-color: #2c3e5b;
+  color: #fff;
+}
+
+header .inner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.logo {
+  padding: 1rem;
+}
+
+.logo svg {
+  width: 3.4375rem;
+  fill: #ccc;
+}
+
+.menu-btn {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.menu-btn svg {
+  width: 2.5rem;
+  fill: #ccc;
+}
+
+nav {
+  display: none;
+}
+
+.show-nav {
+  display: block;
 }
 
 nav li {
   font-size: 1.125rem;     /* 18px */
 }
 
-header {
-  background-color: #2c3e5b;
+nav li a {
+  color: #eee;
+}
+
+nav li a:hover {
+  color: #346;
+}
+
+nav li a:active {
+  color: #346;
+}
+
+/* banner styles */
+
+.banner {
+  background-image: url('../img/banner.jpg');
+  background-image: url('../img/banner.webp');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 6rem 0 4rem;
   color: #fff;
+}
+
+
+/* services styles */
+
+.services svg {
+  flex-basis: 10.75rem;
+}
+
+
+
+
+@media (min-width: 800px) {
+
+  /* type styles */
+
+  h2 {
+    font-size: 6.25rem;     /* 100px */
+    line-height: 7.5rem;     /* 120px */
+  }
+
+  h3 {
+    font-size: 1.5rem;     /* 24px */
+    line-height: 3rem;     /* 48px */
+  }
+
+  h4 {
+    font-size: 2.25rem;     /* 36px */
+    line-height: 3rem;     /* 48px */
+  }
+
 }
