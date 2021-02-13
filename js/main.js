@@ -1,6 +1,15 @@
-var button = document.querySelector('.menu-btn');
+var a = document.querySelector('.menu-btn');
 
-button.addEventListener('click', function(){
+a.addEventListener('click', function(){
 
   document.querySelector('nav').classList.toggle('show-nav');
+
+});
+
+var more = document.querySelector('.more-btn');
+
+more.addEventListener('click', function(){
+
+  document.querySelector('nav').classList.toggle('show-nav-links');
+
 });
